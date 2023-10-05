@@ -2,10 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
+    <title>Targeting</title>
     <!-- Inline styles go between style tags -->
     <style>
+h1{
+    color: red;
+}
+
+/*Selectors can be combined via sibling*/
+form > p{
+    color: green;
+}
+
+/*Selectors can be combined via sibling*/
+label{
+    font-weight: bold;
+}
+
+/*Selectors can be combined via sibling*/
+label + input{
+    clear:both;
+    display:block;
+}
+
+/*General Siblings*/
+label ~ input{
+    clear:both;
+    display:block;
+}
+
+button{
+    color: blue;
+    background-color: green;
+}
+
+input[type="text"]{
+    background-color: red;
+}
+
+
+
+
 
 
     </style>
@@ -74,6 +111,9 @@
     </fieldset>
 
     <button type="submit">Buy Tickets!</button>
+
+
+
 </form>
 </body>
 </html>
